@@ -36,7 +36,7 @@ function App() {
         setbackgroundImg(cloudy);
       }
 
-      if (data.description === 'shower rain' || data.description === 'rain') {
+      if (data.description === 'shower rain' || data.description === 'rain' || data.description === 'moderate rain') {
         setbackgroundImg(rainy);
       }
 
