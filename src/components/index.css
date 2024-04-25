@@ -1,0 +1,113 @@
+:root {
+  --section--overlay: rgba(0, 0, 0, 0.7);
+  --backrgound-overlay: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+
+
+.app {
+ /* object-fit: cover; */
+  width: 100%;
+  height: 100vh;
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0; */
+}
+
+/* .image{
+    /* position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    max-width: 100px;
+    max-height: 100px; */
+
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--backrgound-overlay);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.section {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+.sec__inp,
+.sec__temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section--overlay);
+}
+
+.sect_inp>input {
+    border: 0.8px solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    font-size:20px ;
+    font-weight: 200;
+}
+
+.sec__inp>input:focus {
+    outline: none;
+}
+
+.sec__inp>button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 0.4;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.section__inputs>button:hover {
+     cursor: pointer;
+     background-color: coral;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon>h3 {
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.temperature>h1 {
+font-size: 50px;
+}
