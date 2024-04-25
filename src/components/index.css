@@ -1,6 +1,6 @@
 :root {
   --section--overlay: rgba(0, 0, 0, 0.7);
-  --backrgound-overlay: rgba(0, 0, 0, 0.7);
+  --backrgound-overlay: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -24,6 +24,7 @@
   top: 0;
   left: 0; */
 }
+.app:after{ content:''; background:rgba(255,255,255,.5); }
 
 /* .image{
     /* position: absolute;
@@ -47,9 +48,10 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   padding: 1rem;
+  /* background-color: var(--section--overlay) */
 }
 
 .section {
@@ -59,7 +61,13 @@
   color: white;
 }
 
-.sec__inp,
+.sec__inp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section--overlay);
+  bottom: 9%;
+}
 .sec__temp {
   display: flex;
   align-items: center;
@@ -87,12 +95,12 @@
     border-radius: 0.4;
     font-size: 20px;
     font-weight: 500;
-    background-color: white;
+    background-color: antiquewhite;
 }
 
 .section__inputs>button:hover {
      cursor: pointer;
-     background-color: coral;
+     background-color: rgb(252, 71, 6);
 }
 
 .icon {
@@ -111,3 +119,74 @@
 .temperature>h1 {
 font-size: 50px;
 }
+
+.max {
+  display: flex;
+  align-items: center;
+  right: 28%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 11%;
+  font-size: 15px;
+  color: rgb(248, 8, 8);
+  width: 42%;
+  height: 15%;
+  border-radius: 0.4rem;
+
+ 
+}
+
+.min {
+  display: flex;
+  align-items: center;
+  left: 28%;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 4%;
+  font-size: 15px;
+  color: blue;
+  width: 42%;
+  height: 15%;
+  border-radius: 0.4rem;
+
+ 
+}
+
+.wind {
+  display: flex;
+  align-items: center;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 2%;
+  font-size: 15px;
+  color: gray;
+  width: 42%;
+  height: 15%;
+  border-radius: 0.4rem;
+
+
+ 
+}
+
+.max>small, .max>h1, .min>small, .min>h1, .wind>small, .wind>h1{
+  left: 25%;
+}
+
+
+
+
+
+.max>small {
+  color: lightcoral;
+  font-size: 20px;
+}
+
+.min>small {
+  color: skyblue;
+  font-size: 20px;
+}
+
+.wind>small {
+  color: darkgrey;
+  font-size: 20px;
+}
+
+
