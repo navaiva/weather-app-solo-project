@@ -24,7 +24,7 @@ function App() {
 
       if (
         data.description === 'few clouds' ||
-        data.description === 'clear sky'
+        data.description === 'clear sky' || data.description === 'scattered clouds'
       ) {
         setbackgroundImg(sunny);
       }
@@ -36,7 +36,7 @@ function App() {
         setbackgroundImg(cloudy);
       }
 
-      if (data.description === 'shower rain' || data.description === 'rain' || data.description === 'moderate rain') {
+      if (data.description === 'shower rain' || data.description === 'rain' || data.description === 'moderate rain' || data.description === "heavy intensity rain" || data.description === 'light rain' ) {
         setbackgroundImg(rainy);
       }
 

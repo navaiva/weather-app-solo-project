@@ -11,4 +11,4 @@ the basic:
 shows the weather daily and changes the background and the icon depending of the weather you choose
 
 the advance:
-add the time of city you choose, chnage the color of the page when the background change: give more detail information (daily, hourly, weekly) weather sunrise and sunset
+add the time of city you choose, change the color of the page when the background change: give more detail information (daily, hourly, weekly) weather sunrise and sunset

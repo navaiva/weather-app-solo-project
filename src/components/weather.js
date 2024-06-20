@@ -1,4 +1,4 @@
-const key = 
+const key = '062034d3a6fc88440328caf80074ecb1'
 
 const makeIcon = (iconId) => `https://openweathermap.org/img/wn/${iconId}@2x.png`
 

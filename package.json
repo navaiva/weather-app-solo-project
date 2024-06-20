@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
