@@ -15,12 +15,13 @@ function App() {
   const [units, setUnits] = useState('imperial');
   const [backgroundImg, setbackgroundImg] = useState(sunny);
 
+  
+
+
   useEffect(() => {
     const fetchedData = async () => {
       const data = await getWeatherData(city, units);
       setWeather(data);
-
-      console.log(data.description);
 
       if (
         data.description === 'few clouds' ||
@@ -79,22 +80,22 @@ function App() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   };
+
   return (
     <div className="app" style={backgroundStyle}>
-      {/* <img className='image' src={cloudy} alt=""></img> */}
       <div className="overlay">
         {weather && (
           <div className="container">
-            <div className="section sec__inp">
+            <div className='section sec__inp'>
               <input
                 onKeyDown={enterInp}
                 type="text"
                 name="city"
                 placeholder="entercity"
               />
-              <button onClick={(e) => handleUnits(e)}> °C</button>
+              <button className='button' onClick={(e) => handleUnits(e)}> °C</button>
             </div>
-            <div className="section sec__temp">
+            <div className={`section sec__temp ${weather.temp > 20 ? 'isHot' : 'isCold'}`}>
               <div className="icon">
                 <h3>{` ${weather.name}, ${weather.country} `}</h3>
                 <img src={weather.iconUrl} alt="weatherIcon" />
@@ -108,18 +109,18 @@ function App() {
               
             </div>
             <div className='max'>
-                <small>max</small>
-                <h1>{`${weather.temp_max.toFixed()} °${
+                <small className='small'>max</small>
+                <h1 className='h1M'>{`${weather.temp_max.toFixed()} °${
                   units === 'metric' ? 'C' : 'F' }`}</h1>
               </div>
               <div className='min'>
-                <small>min</small>
-                <h1>{`${weather.temp_min.toFixed()} °${
+                <small className='small'>min</small>
+                <h1 className='h1m'>{`${weather.temp_min.toFixed()} °${
                   units === 'metric' ? 'C' : 'F' }`}</h1>
               </div>
               <div className='wind'>
-                <small>wind</small>
-                <h1>{`${weather.speed.toFixed()} ${
+                <small className='small'>wind</small>
+                <h1 className='h1w'>{`${weather.speed.toFixed()} ${
                   units === 'metric' ? 'm/s' : 'm/h' }`}</h1>
               </div>
            

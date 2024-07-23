@@ -8,7 +8,6 @@ const getWeatherData = async (city, units = 'metric') => {
     const data = await fetch(url)
     .then((res) => res.json())
     .then((data) => data);
-    console.log(data)
 
   
 
