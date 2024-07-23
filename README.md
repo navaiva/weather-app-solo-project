@@ -1,3 +1,5 @@
+welcome to my first scratch project
+
 the problem:
 
 weather app sometimes are boring to see and has the minimum amount of data that you need 
